@@ -1,0 +1,22 @@
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  color: rgb(183, 189, 198);
+  margin-top: 30px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.btn {
+  width: 100%;
+  text-transform: capitalize;
+}
+

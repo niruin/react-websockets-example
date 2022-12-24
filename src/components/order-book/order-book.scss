@@ -1,0 +1,65 @@
+.order-book {
+  margin: 10px 0 4px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .header {
+    min-width: 200px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__symbol {
+      text-transform: uppercase;
+      color: rgb(183, 189, 198);
+    }
+    &__status-connection {
+      font-size: 10px;
+      color: rgb(183, 189, 198);
+
+      &--open {
+        color: rgb(14, 203, 129);
+      }
+    }
+  }
+
+
+  .list {
+    list-style: none;
+    padding: 6px 8px;
+    margin: 0;
+    font-size: 12px;
+    color: rgb(132, 142, 156);
+    border: 1px solid rgb(94, 102, 115);
+
+    &:first-child {
+      border-bottom: 1px dotted rgb(94, 102, 115);
+    }
+  }
+
+  .line {
+    display: flex;
+    justify-content: space-between;
+
+    &-caption {
+      font-size: 12px;
+      color: rgb(132, 142, 156);
+    }
+
+    &__cost, &__qty{
+      font-size: 12px;
+      line-height: 20px;
+      color: rgb(246, 70, 93);
+    }
+
+    &__cost--ask {
+      color: rgb(14, 203, 129);
+    }
+
+    &__qty {
+      color: rgb(183, 189, 198)
+    }
+  }
+}
